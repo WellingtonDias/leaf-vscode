@@ -1,0 +1,37 @@
+{
+	"name": "Leaf",
+	"scopeName": "source.leaf",
+	"patterns":
+	[
+		{
+			"name": "comment.line.number-sign",
+			"match": "#.*?(#|$)"
+		},
+		{
+			"name": "keyword.operator",
+			"match": "="
+		},
+		{
+			"name": "constant.language",
+			"match": "\\b(null|false|true)\\b"
+		},
+		{
+			"name": "constant.numeric",
+			"match": "-?\\d+(\\.\\d)?\\d*"
+		},
+		{
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\""
+		},
+		{
+			"name": "string.other",
+			"begin": "<",
+			"end": ">"
+		},
+		{
+			"name": "variable.other",
+			"match": "\\b[A-Za-z_][\\w-]*\\b"
+		}
+	]
+}

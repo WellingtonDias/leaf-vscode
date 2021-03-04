@@ -1,0 +1,14 @@
+{
+	modules =
+	{
+		clean = "https://raw.githubusercontent.com/WellingtonDias/bolt-clean/master/index.js",
+		execute = "https://raw.githubusercontent.com/WellingtonDias/bolt-execute/master/index.js"
+	},
+	clean = "./leaf.vsix",
+	execute = "npm run build",
+	macros =
+	{
+		build = "execute",
+		clean = "clean"
+	}
+}

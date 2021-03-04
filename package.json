@@ -1,0 +1,52 @@
+{
+	"name": "leaf-vscode",
+	"version": "1.0.0",
+	"description": "Leaf language support for Visual Studio Code",
+	"author": "Wellington Dias <wellingtongomesdias@gmail.com> (https://poliglota.me)",
+	"license": "MIT",
+	"keywords": [
+		"leaf",
+		"data",
+		"interchange",
+		"format",
+		"language",
+		"poliglota",
+		"poliglota-me",
+		"poliglota.me"
+	],
+	"homepage": "https://leaf.poliglota.me",
+	"repository": "github:WellingtonDias/leaf-vscode",
+	"icon": "icon.png",
+	"displayName": "Leaf",
+	"publisher": "wellingtondias",
+	"engines": {
+		"vscode": "*"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"scripts": {
+		"build": "vsce package -o './leaf.vsix'"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "leaf",
+				"extensions": [
+					".leaf"
+				],
+				"configuration": "./leaf.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "leaf",
+				"scopeName": "source.leaf",
+				"path": "./leaf.tmLanguage.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"vsce": "^1.85.0"
+	}
+}
